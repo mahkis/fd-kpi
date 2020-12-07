@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Fastdata - KPI</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- CSS files -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/fontawesome.css" rel="stylesheet"/>
+</head>
+<body class="antialiased">
+<div class="page">
+    <header class="navbar navbar-expand-md navbar-dark d-print-none">
+        <div class="container-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                <img class="mr-2" src="img/fd-white.png" alt="" width="25">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="cabinet.html" class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3">
+                <span class="large">FASTDATA - KPI</span>
+            </a>
+            <div class="navbar-nav flex-row order-md-last">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link d-flex lh-1 text-light px-2" data-toggle="dropdown">
+                        <i class="fas fa-user fa-sm"></i>
+                        <div class="d-none d-xl-block pl-1">
+                            <div>Эшматов Тошмат <i class="fas fa-caret-down fa-sm text-white-50"></i></div>
+                            <!--<div class="mt-1 small text-muted">Администратор</div>-->
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a href="profile.html" class="dropdown-item">Мой профил</a>
+                        <a href="login.html" class="dropdown-item">Выход</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="navbar-expand-md">
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <div class="navbar navbar-light">
+                <div class="container">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cabinet.html">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fas fa-lg fa-tachometer-alt"></i>
+                                    <span class="nav-link-title">Главная</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown menu active">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fas fa-lg fa-star-half-alt"></i>
+                                    <span class="nav-link-title">Оценки и факты</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="2-1.html">
+                                        Выполнение плана
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="2-2.html">
+                                        Соблюдение удельных норм
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="2-3.html">
+                                        Соблюдение правил ОТ и ТБ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="2-4.html">
+                                        Соблюдение трудовой дисциплины
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item active" href="2-5.html">
+                                        Соблюдение исполнительной дисциплины
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fas fa-lg fa-list-alt"></i>
+                                    <span class="nav-link-title">Отчеты</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="report.html">
+                                        Сводные показатели
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fas fa-lg fa-cogs"></i>
+                                    <span class="nav-link-title">Параметры контроля</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="5-1.html">
+                                        Плановые параметры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="5-2.html">
+                                        Удельные нормы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="5-3.html">
+                                        Производство
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fas fa-lg fa-user-cog"></i>
+                                    <span class="nav-link-title">Администрирование</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="user.html">
+                                        Пользователи и права
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="role.html">
+                                        Роли
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="meta.html">
+                                        Метаданные
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="user_log.html">
+                                        Журнал действий пользователей
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <i class="fas fa-lg fa-book"></i>
+                                    <span class="nav-link-title">Справочники</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="department.html">
+                                        Подразделении
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="position.html">
+                                        Должности
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="employee.html">
+                                        Сотрудники
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="violation_type.html">
+                                        Тип нарушения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="violation.html">
+                                        Нарушения
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header d-print-none">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <!-- Page pre-title -->
+                                <h2 class="page-title">
+                                    <i class="fas fa-list mr-2"></i>
+                                    <span>Соблюдение исполнительной дисциплины</span>
+                                </h2>
+                            </div>
+                            <div class="col-auto ml-auto d-print-none">
+                                <div class="btn-list">
+                                    <a href="#" class="btn btn-primary " data-toggle="modal"
+                                       data-target="#addForm">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-vcenter table-mobile-md card-table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Дата</th>
+                                <th>Ф.И.О сотрудника</th>
+                                <th>Подразделение</th>
+                                <th>Инспектор</th>
+                                <th>Примечание</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>29.11.2020 11:26:04</td>
+                                <td>Эшматов Тошмат Ёрматович</td>
+                                <td>Подразделение 1</td>
+                                <td>Тошматов Ёрмат Эшматович</td>
+                                <td class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
+                                    veniam.
+                                </td>
+                                <td>
+                                    <div class="btn-list flex-nowrap">
+                                        <a href="#" class="btn btn-white" data-toggle="modal" data-target="#editForm">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger" data-toggle="modal"
+                                           data-target="#deleteForm">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer-transparent d-print-none">
+            <div class="container">
+                <div class="row text-center align-items-center">
+                    <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                        <ul class="list-inline list-inline-dots mb-0">
+                            <li class="list-inline-item">
+                                Copyright © 2020
+                                <a href="#" class="link-secondary">Fastdata - KPI</a>.
+                                Все права защищены.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal modal-blur fade" id="addForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Добавить</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                            <div class="row mb-2 align-items-end">
+                                <div class="form-group">
+                                    <label class="form-label">Выберите сотрудник</label>
+                                    <div>
+                                        <select class="form-select">
+                                            <option name="id_employee" value="1">Пользователь 1</option>
+                                            <option name="id_employee" value="2">Пользователь 2</option>
+                                            <option name="id_employee" value="3">Пользователь 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Тип нарушение</label>
+                                    <div>
+                                        <select class="form-select">
+                                            <option name="id_violation" value="1">Тип нарушения 1</option>
+                                            <option name="id_violation" value="2">Тип нарушения 2</option>
+                                            <option name="id_violation" value="3">Тип нарушения 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Примечание</label>
+                                    <textarea class="form-control" name="comment" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn mr-auto" data-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-blur fade" id="editForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Редактировать</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                            <div class="row mb-2 align-items-end">
+                                <div class="form-group">
+                                    <label class="form-label">Выберите сотрудник</label>
+                                    <div>
+                                        <select class="form-select">
+                                            <option name="id_employee" value="1">Пользователь 1</option>
+                                            <option name="id_employee" selected value="2">Пользователь 2</option>
+                                            <option name="id_employee" value="3">Пользователь 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Тип нарушение</label>
+                                    <div>
+                                        <select class="form-select">
+                                            <option name="id_violation" value="1">Тип нарушения 1</option>
+                                            <option name="id_violation" selected value="2">Тип нарушения 2</option>
+                                            <option name="id_violation" value="3">Тип нарушения 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Примечание</label>
+                                    <textarea class="form-control" name="comment" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, neque!
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn mr-auto" data-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-blur fade" id="deleteForm" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-title text-center"><i class="fas fa-3x fa-exclamation-triangle text-danger"></i></div>
+                        <div>Вы действительно хотите безвозвратно удалить?</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link link-secondary mr-auto" data-dismiss="modal">Отмена
+                        </button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Да, удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Libs JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+
+<!-- Tabler Core -->
+<script src="js/tabler.min.js"></script>
+</body>
+</html>

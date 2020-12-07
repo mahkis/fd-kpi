@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Fastdata - KPI</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- CSS files -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/fontawesome.css" rel="stylesheet"/>
+    <link href="css/odometer-theme-car.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/normalize.css" rel="stylesheet"/>
+
+    <script src="js/Chart.min.js"></script>
+    <script src="js/utils.js"></script>
+</head>
+
+<body class="antialiased">
+<div class="page">
+    <header class="navbar navbar-expand-md mb-2 navbar-dark d-print-none">
+        <div class="container-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="." class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3">
+                <img class="mr-2" src="img/fd-white.png" alt="" width="25">
+                <span class="large">FASTDATA - KPI</span>
+            </a>
+            <div class="navbar-nav flex-row order-md-last">
+                <div class="nav-item">
+                    <a href="login.html" class="nav-link d-flex lh-1 text-light p-0">
+                        <i class="fas fa-sign-in-alt fa-sm"></i>
+                        <div class="d-none d-sm-block pl-1">
+                            <div>Вход</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="page-header d-print-none">
+            <div class="row align-items-center">
+                <div class="col">
+                    <!-- Page pre-title -->
+                    <h2 class="text-center text-primary text-uppercase m-0 p-0">
+                        Показатели за нояабрь месяц 2020 года
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <ul class="circle-container">
+            <li class="cursor-pointer title" onclick="location.href='index_by_dep.html'">
+                <canvas height="200" id="norm"></canvas>
+                <span class="title">Соблюдение удельных норм</span>
+            </li>
+            <li class="cursor-pointer title" onclick="location.href='index_by_dep.html'">
+                <canvas height="200" id="plan"></canvas>
+                <span class="title">Выполнение плана</span>
+            </li>
+            <li class="cursor-pointer title" onclick="location.href='index_by_dep.html'">
+                <canvas height="200" id="ot-tb"></canvas>
+                <span class="title">Соблюдение правил ОТ и ТБ</span>
+            </li>
+            <li class="cursor-pointer title" onclick="location.href='index_by_dep.html'">
+                <canvas height="200" id="tur-dis"></canvas>
+                <span class="title">Соблюдение исполнительной &nbsp;  дисциплины</span>
+            </li>
+            <li class="cursor-pointer title" onclick="location.href='index_by_dep.html'">
+                <canvas height="200" id="is-dis"></canvas>
+                <span class="">Соблюдение трудовой дисциплины</span>
+            </li>
+
+            <li class="cursor-pointer title" onclick="location.href='index_by_dep.html'">
+                <canvas height="200" id="all-kpi"></canvas>
+                <span class="large">Общий KPI</span>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+
+
+<script>
+    var config1 = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    95, 5
+                ],
+                backgroundColor: [
+                    window.chartColors.yellow,
+                    window.chartColors.grey
+                ]
+            }],
+            labels: [
+                "Red",
+                "Orange"
+            ]
+        },
+        options: {
+            tooltips: {
+                enabled: false
+            },
+            responsive: true,
+            legend: {
+                display: false
+            }
+        },
+        centerText: {
+            display: true,
+            text: "88.8%"
+        }
+    };
+    var config2 = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    86, 14
+                ],
+                backgroundColor: [
+                    window.chartColors.purple,
+                    window.chartColors.grey
+                ]
+            }],
+            labels: [
+                "Red",
+                "Orange"
+            ]
+        },
+
+        tooltips: {
+            enabled: false
+        },
+        hover: {
+            mode: null
+        },
+        options: {
+            tooltips: {
+                enabled: false
+            },
+            responsive: true,
+            legend: {
+                display: false
+            }
+        },
+        centerText: {
+            display: true,
+            text: "86%"
+        }
+    };
+    var config3 = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    69, 31
+                ],
+                backgroundColor: [
+                    window.chartColors.green,
+                    window.chartColors.grey
+                ]
+            }],
+            labels: [
+                "Red",
+                "Orange"
+            ]
+        },
+        options: {
+            tooltips: {
+                enabled: false
+            },
+            responsive: true,
+            legend: {
+                display: false
+            }
+        },
+        centerText: {
+            display: true,
+            text: "69%"
+        }
+    };
+    var config4 = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    87, 13
+                ],
+                backgroundColor: [
+                    window.chartColors.blue,
+                    window.chartColors.grey
+                ]
+            }],
+            labels: [
+                "Red",
+                "Orange"
+            ]
+        },
+        options: {
+            tooltips: {
+                enabled: false
+            },
+            responsive: true,
+            legend: {
+                display: false
+            }
+        },
+        centerText: {
+            display: true,
+            text: "87%"
+        }
+    };
+    var config5 = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    91, 9
+                ],
+                backgroundColor: [
+                    window.chartColors.red,
+                    window.chartColors.grey
+                ]
+            }],
+            labels: [
+                "Red",
+                "Orange"
+            ]
+        },
+        options: {
+            tooltips: {
+                enabled: false
+            },
+            responsive: true,
+            legend: {
+                display: false
+            }
+        },
+        centerText: {
+            display: true,
+            text: "91%"
+        }
+    };
+    var config6 = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    74, 26
+                ],
+                backgroundColor: [
+                    window.chartColors.orange,
+                    window.chartColors.grey
+                ]
+            }],
+            labels: [
+                "Red",
+                "Orange"
+            ]
+        },
+        options: {
+            tooltips: {
+                enabled: false
+            },
+            responsive: true,
+            legend: {
+                display: false
+            }
+        },
+        centerText: {
+            display: true,
+            text: "74%"
+        }
+    };
+
+    Chart.Chart.pluginService.register({
+        beforeDraw: function (chart) {
+            if (chart.config.centerText.display !== null &&
+                typeof chart.config.centerText.display !== 'undefined' &&
+                chart.config.centerText.display) {
+                drawTotals(chart);
+            }
+        }
+    });
+
+    function drawTotals(chart) {
+
+        var width = chart.chart.width,
+            height = chart.chart.height,
+            ctx = chart.chart.ctx;
+
+        ctx.restore();
+        var fontSize = (height / 114).toFixed(2);
+        ctx.font = fontSize + "em sans-serif";
+        ctx.textBaseline = "middle";
+
+        var text = chart.config.centerText.text,
+            textX = Math.round((width - ctx.measureText(text).width) / 2),
+            textY = height / 1.9;
+
+        ctx.fillText(text, textX, textY);
+        ctx.save();
+    }
+
+    window.onload = function () {
+        var ctx1 = document.getElementById("all-kpi").getContext("2d");
+        var ctx2 = document.getElementById("plan").getContext("2d");
+        var ctx3 = document.getElementById("norm").getContext("2d");
+        var ctx4 = document.getElementById("is-dis").getContext("2d");
+        var ctx5 = document.getElementById("ot-tb").getContext("2d");
+        var ctx6 = document.getElementById("tur-dis").getContext("2d");
+
+        window.myDoughnut = new Chart(ctx1, config1);
+        window.myDoughnut = new Chart(ctx2, config2);
+        window.myDoughnut = new Chart(ctx3, config3);
+        window.myDoughnut = new Chart(ctx4, config4);
+        window.myDoughnut = new Chart(ctx5, config5);
+        window.myDoughnut = new Chart(ctx6, config6);
+    };
+
+</script>
+
+<!-- Libs JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+
+<!-- Tabler Core -->
+<script src="js/tabler.min.js"></script>
+</html>

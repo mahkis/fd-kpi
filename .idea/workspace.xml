@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="980e9eb0-2d5d-450d-8e0e-8ed73d58c228" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FD-KPI" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="-7" />
+    <option name="width" value="862" />
+    <option name="height" value="872" />
+  </component>
+  <component name="ProjectId" id="1kIEIAMA260QmYiXFH9BUtoIv17" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Temp\tabler-dev\demo\img" />
+      <recent name="D:\Temp\tabler-dev\demo\js" />
+      <recent name="D:\Temp\tabler-dev\demo\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Proektlar\FD-KPI Far IEM\FD-KPI" />
+      <recent name="D:\Temp\tabler-dev\demo" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="980e9eb0-2d5d-450d-8e0e-8ed73d58c228" name="Default Changelist" comment="" />
+      <created>1605379622985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605379622985</updated>
+      <workItem from="1605379624290" duration="7087000" />
+      <workItem from="1605500449863" duration="4526000" />
+      <workItem from="1605542679111" duration="9840000" />
+      <workItem from="1605586642557" duration="3560000" />
+      <workItem from="1605590244429" duration="1645000" />
+      <workItem from="1605806650457" duration="14108000" />
+      <workItem from="1605842557871" duration="2787000" />
+      <workItem from="1606003829588" duration="7329000" />
+      <workItem from="1606019815220" duration="4502000" />
+      <workItem from="1606028491178" duration="3582000" />
+      <workItem from="1606032518530" duration="294000" />
+      <workItem from="1606147062984" duration="4231000" />
+      <workItem from="1606413114761" duration="4052000" />
+      <workItem from="1606417235746" duration="26000" />
+      <workItem from="1606618126474" duration="6260000" />
+      <workItem from="1606630018262" duration="6742000" />
+      <workItem from="1606636892044" duration="249000" />
+      <workItem from="1606661354752" duration="3105000" />
+      <workItem from="1606747184960" duration="1027000" />
+      <workItem from="1606748925470" duration="543000" />
+      <workItem from="1606750294523" duration="2038000" />
+      <workItem from="1606932856956" duration="4810000" />
+      <workItem from="1606938229010" duration="12423000" />
+      <workItem from="1606952401337" duration="519000" />
+      <workItem from="1607094703216" duration="609000" />
+      <workItem from="1607098566673" duration="12580000" />
+      <workItem from="1607135526178" duration="2082000" />
+      <workItem from="1607175039638" duration="7470000" />
+      <workItem from="1607204533635" duration="6123000" />
+      <workItem from="1607265483274" duration="5317000" />
+      <workItem from="1607310496636" duration="1222000" />
+      <workItem from="1607328955609" duration="304000" />
+      <workItem from="1607336657137" duration="1055000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605547332007">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.760@0.0.1280.760" timestamp="1605547332007" />
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1605589122233">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1605589122233" />
+  </component>
+</project>

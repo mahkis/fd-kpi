@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Fastdata - KPI</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- CSS files -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/fontawesome.css" rel="stylesheet"/>
+</head>
+<body class="antialiased">
+<div class="page">
+    <header class="navbar navbar-expand-md navbar-dark d-print-none">
+        <div class="container-sm">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="." class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3">
+                <img class="mr-2" src="img/fd-white.png" alt="" width="25">
+                <span class="large">FASTDATA - KPI</span>
+            </a>
+            <div hidden class="navbar-nav flex-row order-md-last">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link d-flex lh-1 text-light p-0">
+                        <i class="far fa-chart-bar fa-sm"></i>
+                        <div class="d-none d-sm-block pl-1">
+                            <div>Инфографика</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-fill d-flex flex-column mt-3">
+        <div class="container-tight py-4">
+            <form class="card card-md" action="cabinet.html" method="post" autocomplete="off">
+                <div class="card-body">
+                    <h1 class="text-center mb-4">Вход в систему</h1>
+                    <div class="mb-3">
+                        <label class="form-label">Пожалуйста, введите логин и пароль</label>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">+998</span>
+                        <!--<input type="text" class="form-control" name="account_number" placeholder="Телефон" autocomplete="off">-->
+                        <input type="text" name="input-mask" class="form-control" data-mask="00 000-00-00" data-mask-visible="true" placeholder="(00) 0000-0000" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <input type="password" class="form-control" name="password" placeholder="Пароль" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row mb-2 align-items-center">
+                        <div class="col">
+                            <div>
+                                <a href="#">Забыли пароль?</a>
+                            </div>
+                        </div>
+                        <div class="col text-right">
+                            <button type="submit" class="btn btn-primary">Вход</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Libs JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+
+<!-- Tabler Core -->
+<script src="js/tabler.min.js"></script>
+</body>
+</html>
